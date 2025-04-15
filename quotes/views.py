@@ -1,5 +1,4 @@
-from django.shortcuts import HttpResponse
+from django.shortcuts import render
 def home(request):
-    return HttpResponse("Hello,welcome to QuoteBook!")
+    return render(request, 'quotes/home.html')
 
-# Create your views here.

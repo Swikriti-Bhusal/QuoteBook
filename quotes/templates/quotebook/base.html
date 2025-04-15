@@ -1,0 +1,28 @@
+<!-- quotes/templates/quotes/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}QuoteBook{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>💬 QuoteBook</h1>
+        <nav>
+            <a href="/">Home</a>
+            <!-- we'll add more links later -->
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <hr>
+        <p>Made with 💖 </p>
+    </footer>
+</body>
+</html>
